@@ -395,6 +395,59 @@ You can combine different selectors, conditions, and jQuery functions to create 
     ```
 
 4. In a table with multiple rows, how can you select and highlight only the rows that contain cells with a specific class, such as "important"?
+   ```html
+   <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <table border="1">
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Lionel</td>
+                <td class="important">Messi</td>
+                <td>36</td>
+            </tr>
+            <tr>
+                <td>Cristiano</td>
+                <td class="important">Ronaldo</td>
+                <td class="important">37</td>
+            </tr>
+            <tr>
+                <td>Rajiv</td>
+                <td>Bose</td>
+                <td>56</td>
+            </tr>
+            <tr>
+                <td>Jhon</td>
+                <td>Snow</td>
+                <td>Infinity</td>
+            </tr>
+            <tr>
+                <td class="important">Peter</td>
+                <td>Chezc</td>
+                <td>46</td>
+            </tr>
+        </table>
+        <button onclick="highlight()">Highlight</button>
+    </body>
+    <script>
+        const highlight=()=>{
+            $("tr:has(td.important)").css({"background-color":"yellow"})
+        }
+    </script>
+    </html>
+   ```
 
 5. On a web page, how can you select and hide all the `<img>` elements that have the "featured" attribute set to "false"?
 
