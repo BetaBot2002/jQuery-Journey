@@ -650,6 +650,48 @@ These examples demonstrate how to use each animation method with the `$("#elemen
    ```
 
 9.  On a webpage, how can you select and fade out all the `<h2>` elements within a specific `<div>` container using jQuery animations?
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Document</title>
+    </head>
+
+    <body>
+        <div>
+            <h2>No</h2>
+            <h2>NO</h2>
+            <h2>NO</h2>
+        </div>
+        <div class="fadeOut">
+            <h2>Yes</h2>
+            <h2>Yes</h2>
+            <h2>Yes</h2>
+        </div>
+        <div>
+            <h2>NO</h2>
+            <h2>NO</h2>
+            <h2>NO</h2>
+        </div>
+        <div class="fadeOut">
+            <h2>Yes</h2>
+            <h2>Yes</h2>
+            <h2>Yes</h2>
+        </div>
+        <button onclick="fadeOutH2()">Fade Out H2</button>
+    </body>
+    <script>
+        const fadeOutH2=()=>{
+            $(".fadeOut h2").fadeOut(1000)
+        }
+    </script>
+    </html>
+    ```
 
 10. In a table, how can you select and count the number of cells in the last column using jQuery selectors?
 
