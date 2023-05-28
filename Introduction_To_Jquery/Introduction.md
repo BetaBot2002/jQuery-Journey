@@ -556,6 +556,33 @@ Once you have the selected inputs, you can iterate over them using the `.each()`
    > [Link to answer](./Practice_Set_Answers/Navigation_menu_current_page_indication/)
 
 8. Suppose you have a set of radio buttons with the same name attribute. How can you select and retrieve the value of the selected radio button using jQuery?
+   ```html
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="radio" name="radio" id="value1" value="Sinchan"> <label for="value1">Sinchan</label>
+        <input type="radio" name="radio" id="value2" value="Ayush"> <label for="value2">Ayush</label>
+        <input type="radio" name="radio" id="value3" value="Ahana"> <label for="value3">Ahana</label>
+        <button onclick="showOutput()">Show Output</button>
+        <div>
+            <p class="output"></p>
+        </div>
+    </body>
+    <script>
+        const showOutput=()=>{
+            let value=$("input[type='radio']:checked").val()
+            $(".output").text(value)
+        }
+    </script>
+    </html>
+   ```
 
 9.  On a webpage, how can you select and fade out all the `<h2>` elements within a specific `<div>` container using jQuery animations?
 
