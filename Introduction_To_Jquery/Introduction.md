@@ -553,6 +553,7 @@ Once you have the selected inputs, you can iterate over them using the `.each()`
    ```
 
 7. In a navigation menu, how can you select and add a CSS class to the `<a>` element that corresponds to the current active page?
+   > [Link to answer](./Practice_Set_Answers/Navigation_menu_current_page_indication/)
 
 8. Suppose you have a set of radio buttons with the same name attribute. How can you select and retrieve the value of the selected radio button using jQuery?
 
