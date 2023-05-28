@@ -566,6 +566,8 @@ These examples demonstrate how to use each animation method with the `$("#elemen
    </details>
 
 5. On a web page, how can you select and hide all the `<img>` elements that have the "featured" attribute set to "false"?
+   <details><summary>View Answer</summary>
+
    ```html
    <!DOCTYPE html>
     <html lang="en">
@@ -599,7 +601,11 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </html>
    ```
 
+   </details>
+
 6. How can you select and disable all the `<input>` elements within a `<form>` that are not of type "text" or "email"?
+   <details><summary>View Answer</summary>
+
    ```html
    <!DOCTYPE html>
     <html lang="en">
@@ -627,11 +633,14 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </script>
     </html>
    ```
+   </details>
 
 7. In a navigation menu, how can you select and add a CSS class to the `<a>` element that corresponds to the current active page?
-   > [Link to answer](./Practice_Set_Answers/Navigation_menu_current_page_indication/)
+   > [View Answer](./Practice_Set_Answers/Navigation_menu_current_page_indication/)
 
 8. Suppose you have a set of radio buttons with the same name attribute. How can you select and retrieve the value of the selected radio button using jQuery?
+   <details><summary>View Answer</summary>
+
    ```html
    <!DOCTYPE html>
     <html lang="en">
@@ -660,7 +669,10 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </html>
    ```
 
+   </details>
+
 9.  On a webpage, how can you select and fade out all the `<h2>` elements within a specific `<div>` container using jQuery animations?
+    <details><summary>View Answer</summary>
 
     ```html
     <!DOCTYPE html>
@@ -704,6 +716,7 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </script>
     </html>
     ```
+    </details>
 
 10. In a table, how can you select and count the number of cells in the last column using jQuery selectors?
     <details><summary>View Answer</summary>
