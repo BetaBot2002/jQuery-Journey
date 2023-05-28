@@ -152,6 +152,7 @@ Here are various aspects of DOM manipulation using jQuery:
    - Get or set text content: `.text()`, `.text('new text')`
    - Get or set HTML content: `.html()`, `.html('<p>new HTML</p>')`
    - Get or set attribute values: `.attr('attributeName')`, `.attr('attributeName', 'value')`
+   - Get or Set Property: `.prop('propertyName')`, `.prop('propertyName','value')`
 
 3. Modifying Element Properties:
    - Add or remove CSS classes: `.addClass('classname')`, `.removeClass('classname')`, `.toggleClass('classname')`
@@ -274,6 +275,45 @@ In the first example, the `:not()` selector is used to exclude elements that mat
 In the second example, the `:has()` selector is used to select elements that contain other elements that match the condition specified inside it. The `:contains()` selector selects all paragraphs that contain a specific text, and the condition function checks if the length of the text is greater than 100 characters. The `:has(p:contains(...))` selector selects all div elements that contain a paragraph with more than 100 characters. Again, the selected elements are given the "highlight" class.
 
 You can combine different selectors, conditions, and jQuery functions to create more complex and specific selections based on your requirements. 
+
+## Selecting elements by checking multiple attributes using selector
+### Direct selection
+To select elements by checking multiple attributes using selector in jQuery, you can use the attribute selector with the multiple attribute values. Here's an example:
+
+```javascript
+// Select all input elements of type "file" or "date"
+var $inputs = $('input[type="file"], input[type="date"]');
+
+// Do something with the selected inputs
+$inputs.each(function() {
+  // Your code here
+});
+```
+
+In the above code, the attribute selector `[type="file"], [type="date"]` is used to select all input elements that have the type attribute equal to "file" or "date". This will select all the input elements that match either of these types.
+
+You can replace `$('input')` with any other selector that matches your specific requirements, such as `$('.my-form input')` to select inputs within a particular form with a class of "my-form".
+
+Once you have the selected inputs, you can iterate over them using the `.each()` function or perform any other operations as needed.
+
+### Inside :not() selection
+To select elements by checking multiple attributes using :not() selector in jQuery,you can make use of the `:not()` selector and the attribute selector. Here's an example:
+
+```javascript
+// Select all input elements that are not of type "file" or "date"
+var $inputs = $('input:not([type="file"], [type="date"])');
+
+// Do something with the selected inputs
+$inputs.each(function() {
+  // Your code here
+});
+```
+
+In the above code, the `:not()` selector is used to exclude the input elements of type "file" or "date" by specifying the attribute selectors `[type="file"]` and `[type="date"]` inside it. This will select all input elements that do not have the specified types.
+
+You can replace `$('input')` with any other selector that matches your specific requirements, such as `$('.my-form input')` to select inputs within a particular form with a class of "my-form".
+
+Once you have the selected inputs, you can iterate over them using the `.each()` function or perform any other operations as needed.
 
 ----
 ## Practice Questions
@@ -484,6 +524,33 @@ You can combine different selectors, conditions, and jQuery functions to create 
    ```
 
 6. How can you select and disable all the `<input>` elements within a `<form>` that are not of type "text" or "email"?
+   ```html
+   <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <form>
+            <input type="text" name="" id="" placeholder="text"><br>
+            <input type="file" name="" id=""><br>
+            <input type="text" name="" id="" placeholder="text"><br>
+            <input type="date" name="" id=""><br>
+            <input type="email" name="" id="" placeholder="mail"><br>
+        </form>
+        <button onclick="hideInput()">Disable Inputs other than text or email</button>
+    </body>
+    <script>
+        const hideInput=()=>{
+            $("input:not([type='text'],[type='email'])").prop("disabled",true)
+        }
+    </script>
+    </html>
+   ```
 
 7. In a navigation menu, how can you select and add a CSS class to the `<a>` element that corresponds to the current active page?
 
