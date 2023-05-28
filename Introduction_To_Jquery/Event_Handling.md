@@ -241,7 +241,7 @@ By using `this` within jQuery code, you can target and manipulate the specific e
 
   </details>
    
-1. Implement a search functionality where the user can enter a search term in an input field and press the Enter key to trigger the search. Write an event handler that captures the Enter key press and performs a search operation based on the entered term.
+5. Implement a search functionality where the user can enter a search term in an input field and press the Enter key to trigger the search. Write an event handler that captures the Enter key press and performs a search operation based on the entered term.
     <details><summary>View Answer</summary>
 
     ```html
