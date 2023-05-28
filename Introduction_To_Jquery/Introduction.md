@@ -450,6 +450,38 @@ You can combine different selectors, conditions, and jQuery functions to create 
    ```
 
 5. On a web page, how can you select and hide all the `<img>` elements that have the "featured" attribute set to "false"?
+   ```html
+   <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    </head>
+    <style>
+        img{
+            width: 200px;
+            height: 100px;
+        }
+    </style>
+    <body>
+        <img src="https://picsum.photos/id/231/200/300" alt="" featured="false">
+        <img src="https://picsum.photos/id/232/200/300" alt="">
+        <img src="https://picsum.photos/id/233/200/300" alt="" featured="false">
+        <img src="https://picsum.photos/id/234/200/300" alt="">
+        <img src="https://picsum.photos/id/235/200/300" alt="" featured="false">
+        <button onclick="showFeatured()">Show Featured Only</button>
+    </body>
+    <script>
+        const showFeatured=()=>{
+            $("img[featured]").hide()
+        }
+    </script>
+    </html>
+   ```
 
 6. How can you select and disable all the `<input>` elements within a `<form>` that are not of type "text" or "email"?
 
