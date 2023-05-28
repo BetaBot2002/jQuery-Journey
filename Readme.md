@@ -25,7 +25,6 @@
 
 > ### Feel free to fork and add more stuff
 >
-<br>
 
 ### Link to this repository: <a href="https://github.com/BetaBot2002/jQuery-Journey/">https://github.com/BetaBot2002/jQuery-Journey/</a>
 
