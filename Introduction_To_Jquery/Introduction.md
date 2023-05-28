@@ -384,6 +384,7 @@ These examples demonstrate how to use each animation method with the `$("#elemen
 ## Practice Questions
 
 1. Given a webpage with multiple `<div>` elements, how can you select and change the background color of only the `<div>` elements that have the class "highlight"?
+    <details><summary>View Answer</summary>
 
     ```html
         <!DOCTYPE html>
@@ -418,8 +419,10 @@ These examples demonstrate how to use each animation method with the `$("#elemen
         </script>
         </html>
         ```
+</details>
 
 2. In a form with several input fields, how can you select and validate only the required input fields by adding a red border to them?
+    <details><summary>View Answer</summary>
 
     ```html
     <!DOCTYPE html>
@@ -458,8 +461,10 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </script>
     </html>
    ```
+   </details>
 
 3. Suppose you have a list of `<li>` elements inside a `<ul>` element. How can you select and add a checkmark icon before each even-indexed `<li>` element using CSS classes?
+    <details><summary>View Answer</summary>
 
     ```html
     <!DOCTYPE html>
@@ -499,7 +504,11 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </html>
     ```
 
+    </details>
+
 4. In a table with multiple rows, how can you select and highlight only the rows that contain cells with a specific class, such as "important"?
+   <details><summary>View Answer</summary>
+
    ```html
    <!DOCTYPE html>
     <html lang="en">
@@ -553,6 +562,8 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     </script>
     </html>
    ```
+
+   </details>
 
 5. On a web page, how can you select and hide all the `<img>` elements that have the "featured" attribute set to "false"?
    ```html
@@ -650,6 +661,7 @@ These examples demonstrate how to use each animation method with the `$("#elemen
    ```
 
 9.  On a webpage, how can you select and fade out all the `<h2>` elements within a specific `<div>` container using jQuery animations?
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -694,6 +706,8 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     ```
 
 10. In a table, how can you select and count the number of cells in the last column using jQuery selectors?
+    <details><summary>View Answer</summary>
+
     ```html
     <!DOCTYPE html>
     <html lang="en">
@@ -738,6 +752,7 @@ These examples demonstrate how to use each animation method with the `$("#elemen
         </script>
     </html>
     ```
+    </details>
 ----
 
 
