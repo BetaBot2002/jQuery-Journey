@@ -340,11 +340,7 @@ Here are all the jQuery animation methods:
 | `.fadeOut()` | Fades out selected elements |
 | `.fadeTo()` | Fades selected elements to a specified opacity |
 | `.fadeToggle()` | Toggles the fading of selected elements |
-| `.slideDown()` | Slides down selected elements |
-| `.slideUp()` | Slides up selected elements |
-| `.slideToggle()` | Toggles the sliding of selected elements |
-| `.animate()` | Animates selected elements with custom properties |
-| `.stop()` | Stops the currently running animation on selected elements |
+
 
 These methods provide a wide range of options for creating dynamic and interactive animations using jQuery.
 
@@ -372,11 +368,7 @@ Here are the animation methods along with example usages:
 | `.fadeOut()` | `$("#element").fadeOut();` |
 | `.fadeTo()` | `$("#element").fadeTo(1000, 0.5);` |
 | `.fadeToggle()` | `$("#element").fadeToggle();` |
-| `.slideDown()` | `$("#element").slideDown();` |
-| `.slideUp()` | `$("#element").slideUp();` |
-| `.slideToggle()` | `$("#element").slideToggle();` |
-| `.animate()` | `$("#element").animate({opacity: 0.5, left: '250px'}, 1000);` |
-| `.stop()` | `$("#element").stop();` |
+
 
 These examples demonstrate how to use each animation method with the `$("#element")` selector. You can replace `#element` with the appropriate selector for your HTML elements. Additionally, you can customize the parameters and options within the methods to achieve the desired animation effects.
 
