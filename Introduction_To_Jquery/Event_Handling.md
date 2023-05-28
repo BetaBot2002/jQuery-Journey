@@ -145,14 +145,110 @@ By using `this` within jQuery code, you can target and manipulate the specific e
 
 ## Practice Questions
 1. Implement a button that toggles the visibility of a hidden element when clicked.
+    <details><summary>View Answer</summary>
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Document</title>
+    </head>
+    <body>
+        <div style="width:100px;height:100px;background-color: bisque;" hidden>
+            <h3>I am a Hidden Element</h3>
+        </div>
+        <button class="btn">Show Hidden</button>
+    </body>
+    <script>
+        $(".btn").click(function (){
+            $("div").toggle()
+        })
+    </script>
+    </html>
+    ```
+
+  </details>
 
 2. Create an image gallery that displays a larger image when a thumbnail is hovered.
+    <details><summary>View Answer</summary>
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <title>Document</title>
+    </head>
+    <style>
+        .gallery{
+            display: flex;
+            overflow: hidden;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+    <body>
+        <div class="gallery">
+            <img src="https://picsum.photos/id/231/200/300" alt="" featured="false">
+            <img src="https://picsum.photos/id/232/200/300" alt="" featured="true">
+            <img src="https://picsum.photos/id/233/200/300" alt="" featured="false">
+            <img src="https://picsum.photos/id/234/200/300" alt="" featured="true">
+            <img src="https://picsum.photos/id/235/200/300" alt="" featured="false">
+        </div>
+    </body>
+    <script>
+        $("img").mouseenter(function (){
+            $(this).css("width","300px")
+        })
+
+        $("img").mouseleave(function (){
+            $(this).css("width","")
+        })
+    </script>
+    </html>
+    ```
+
+    </details>
 
 3. Build a dropdown menu that opens and closes when clicked.
+    <details><summary>View Answer</summary>
+
+    ```html
+    Answer to be added
+    ```
+
+  </details>
 
 4. Implement a scroll event that triggers an action when the user scrolls to a specific section of the page.
+    <details><summary>View Answer</summary>
+
+    ```html
+    Answer to be added
+    ```
+
+
+  </details>
    
-5. Implement a search functionality where the user can enter a search term in an input field and press the Enter key to trigger the search. Write an event handler that captures the Enter key press and performs a search operation based on the entered term.
+1. Implement a search functionality where the user can enter a search term in an input field and press the Enter key to trigger the search. Write an event handler that captures the Enter key press and performs a search operation based on the entered term.
+    <details><summary>View Answer</summary>
+
+    ```html
+    Answer to be added
+    ```
+
+  </details>
 
 <hr>
 
