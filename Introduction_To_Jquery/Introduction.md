@@ -694,7 +694,50 @@ These examples demonstrate how to use each animation method with the `$("#elemen
     ```
 
 10. In a table, how can you select and count the number of cells in the last column using jQuery selectors?
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        </head>
 
+        <body>
+            <table border="1">
+                <tr>
+                    <th>First Column</th>
+                    <th>Second Column</th>
+                    <th>Last Column</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>I</td>
+                    <td>II</td>
+                    <td>III</td>
+                </tr>
+                <tr>
+                    <td>i</td>
+                    <td>ii</td>
+                    <td>iii</td>
+                </tr>
+            </table>
+            <button onclick="showCellNumber()">Show no. of cells in the last column</button>
+            <p></p>
+        </body>
+        <script>
+            const showCellNumber=()=>{
+                $("p").text($("table tr td:last-child").length)
+            }
+        </script>
+    </html>
+    ```
 ----
 
 
