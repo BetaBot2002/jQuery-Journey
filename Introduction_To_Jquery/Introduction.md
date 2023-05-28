@@ -469,15 +469,15 @@ You can combine different selectors, conditions, and jQuery functions to create 
     </style>
     <body>
         <img src="https://picsum.photos/id/231/200/300" alt="" featured="false">
-        <img src="https://picsum.photos/id/232/200/300" alt="">
+        <img src="https://picsum.photos/id/232/200/300" alt="" featured="true">
         <img src="https://picsum.photos/id/233/200/300" alt="" featured="false">
-        <img src="https://picsum.photos/id/234/200/300" alt="">
+        <img src="https://picsum.photos/id/234/200/300" alt="" featured="true">
         <img src="https://picsum.photos/id/235/200/300" alt="" featured="false">
         <button onclick="showFeatured()">Show Featured Only</button>
     </body>
     <script>
         const showFeatured=()=>{
-            $("img[featured]").hide()
+            $("img[featured='false']").hide()
         }
     </script>
     </html>
