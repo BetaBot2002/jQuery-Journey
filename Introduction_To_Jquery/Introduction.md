@@ -315,6 +315,71 @@ You can replace `$('input')` with any other selector that matches your specific 
 
 Once you have the selected inputs, you can iterate over them using the `.each()` function or perform any other operations as needed.
 
+## jQuery Animations
+### Different methods and description
+Here are all the jQuery animation methods:
+
+| Animation Method | Description |
+|------------------|-------------|
+| `.show()` | Displays selected elements by fading them in |
+| `.hide()` | Hides selected elements by fading them out |
+| `.toggle()` | Toggles the visibility of selected elements |
+| `.fadeIn()` | Fades in selected elements |
+| `.fadeOut()` | Fades out selected elements |
+| `.fadeToggle()` | Toggles the fading of selected elements |
+| `.slideDown()` | Slides down selected elements |
+| `.slideUp()` | Slides up selected elements |
+| `.slideToggle()` | Toggles the sliding of selected elements |
+| `.animate()` | Animates selected elements with custom properties |
+| `.stop()` | Stops the currently running animation on selected elements |
+| `.delay()` | Sets a delay before executing the next animation in the queue |
+| `.queue()` | Manipulates the animation queue for selected elements |
+| `.clearQueue()` | Removes all remaining animations from the queue |
+| `.finish()` | Stops the currently running animation and jumps to the end state |
+| `.fadeIn()` | Fades in selected elements |
+| `.fadeOut()` | Fades out selected elements |
+| `.fadeTo()` | Fades selected elements to a specified opacity |
+| `.fadeToggle()` | Toggles the fading of selected elements |
+| `.slideDown()` | Slides down selected elements |
+| `.slideUp()` | Slides up selected elements |
+| `.slideToggle()` | Toggles the sliding of selected elements |
+| `.animate()` | Animates selected elements with custom properties |
+| `.stop()` | Stops the currently running animation on selected elements |
+
+These methods provide a wide range of options for creating dynamic and interactive animations using jQuery.
+
+### Usage Examples
+Here are the animation methods along with example usages:
+
+| Animation Method | Example Usage |
+|------------------|---------------|
+| `.show()` | `$("#element").show();` |
+| `.hide()` | `$("#element").hide();` |
+| `.toggle()` | `$("#element").toggle();` |
+| `.fadeIn()` | `$("#element").fadeIn();` |
+| `.fadeOut()` | `$("#element").fadeOut();` |
+| `.fadeToggle()` | `$("#element").fadeToggle();` |
+| `.slideDown()` | `$("#element").slideDown();` |
+| `.slideUp()` | `$("#element").slideUp();` |
+| `.slideToggle()` | `$("#element").slideToggle();` |
+| `.animate()` | `$("#element").animate({opacity: 0.5, left: '250px'});` |
+| `.stop()` | `$("#element").stop();` |
+| `.delay()` | `$("#element").delay(1000).fadeOut();` |
+| `.queue()` | `$("#element").queue(function() { $(this).addClass("highlight"); });` |
+| `.clearQueue()` | `$("#element").clearQueue();` |
+| `.finish()` | `$("#element").finish();` |
+| `.fadeIn()` | `$("#element").fadeIn();` |
+| `.fadeOut()` | `$("#element").fadeOut();` |
+| `.fadeTo()` | `$("#element").fadeTo(1000, 0.5);` |
+| `.fadeToggle()` | `$("#element").fadeToggle();` |
+| `.slideDown()` | `$("#element").slideDown();` |
+| `.slideUp()` | `$("#element").slideUp();` |
+| `.slideToggle()` | `$("#element").slideToggle();` |
+| `.animate()` | `$("#element").animate({opacity: 0.5, left: '250px'}, 1000);` |
+| `.stop()` | `$("#element").stop();` |
+
+These examples demonstrate how to use each animation method with the `$("#element")` selector. You can replace `#element` with the appropriate selector for your HTML elements. Additionally, you can customize the parameters and options within the methods to achieve the desired animation effects.
+
 ----
 ## Practice Questions
 
