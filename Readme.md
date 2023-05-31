@@ -1,4 +1,17 @@
 # jQuery Learing Journey
+
+ ## Each topic has its own folder. A folder containts a `Markdown(.md)` file and a `Practice_Set_Answers` folder. The MarkDown file in each folder serves as a `note` or `reference` to that particular topic.
+<br>
+
+## Here's the basic folder structure
+
+- Topic_Name
+    - Practice_Set_Answers
+      - program1.html
+      - program2.html
+    - Markdown.md
+<br>
+
 ## Things to learn
 
 | Topic                  | Description                                                                                                                                                       |
@@ -10,18 +23,7 @@
 | Key services of the application server | An application server provides infrastructure and services to host and run web applications. Services typically include web server functionality, application deployment, database connectivity, security, session management, scalability/load balancing, performance optimization, and logging/monitoring. |
 <br>
 
- ## Each topic has its own folder. A folder containts a `Markdown(.md)` file and a `Practice_Set_Answers` folder. The MarkDown file in each folder serves as a `note` or `reference` to that particular topic.
 
-<br>
-
-## Here's the basic folder structure
-
-- Topic_Name
-    - Practice_Set_Answers
-      - program1.html
-      - program2.html
-    - Markdown.md
-<br>
 
 > ### Feel free to fork and add more stuff
 >
